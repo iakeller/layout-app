@@ -1,0 +1,62 @@
+TabView {
+   align-content: top; 
+}
+
+StackLayout {
+  width: 800;
+  background-color: white;
+  align-content: top;
+  padding-left: 5; 
+  padding-right: 5;
+  padding-top: 0;
+}
+
+Label {
+    text-align: left;
+    align-content: top; 
+}
+
+.btn-primary {
+  background-color: transparent;
+  /* background-color: #00cc99; */
+  color: #6a42bc;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-left: 5;
+  margin-right: 5;
+  padding: 10;
+  /* border-color: #6a42bc;
+  border-bottom-width: 3;
+  border-top-width: 3;
+  border-left-width: 3;
+  border-right-width: 3; */
+  font-size: 24;
+}
+
+Button {
+  margin-bottom: 5;
+  margin-top: 5;
+  background-color: transparent;
+  /* background-color: #00cc99; */
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-left: 5;
+  margin-right: 5;
+  padding: 10;
+  /* border-color: #6a42bc;
+  border-bottom-width: 3;
+  border-top-width: 3;
+  border-left-width: 3;
+  border-right-width: 3; */
+  font-size: 24;
+}
+
+GridLayout {
+  width: 800;
+  background-color: white;
+  align-content: top;
+  padding-left: 5; 
+  padding-right: 5;
+  padding-top: 0;
+}

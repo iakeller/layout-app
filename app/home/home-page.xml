@@ -1,0 +1,95 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+
+	<ActionBar title="Ian Keller" class="action-bar"></ActionBar>
+
+	<TabView>
+		<TabView.items>
+			<TabViewItem title="STACK">
+				<TabViewItem.view>
+					<ScrollView>
+						<StackLayout orientation="vertical" backgroundColor="white">
+							<Label text="Stack" />
+							<Button id="red" text="" width="800" height="50" backgroundColor="red" tap="onTapButton" />
+							<Button id="green" text="" width="800" height="50" backgroundColor="green" tap="onTapButton" />
+							<Button id="blue" text="" width="800" height="50" backgroundColor="blue" tap="onTapButton" />
+							<Button id="SpringGreen" text="" width="800" height="50" backgroundColor="SpringGreen" tap="onTapButton" />
+							<Button id="purple" text="" width="800" height="50" backgroundColor="purple" tap="onTapButton" />
+							<Button id="silver" text="" width="800" height="50" backgroundColor="silver" tap="onTapButton" />
+							<Button id="Turquoise" text="" width="800" height="50" backgroundColor="Turquoise" tap="onTapButton" />
+							<Button id="violet" text="" width="800" height="50" backgroundColor="violet" tap="onTapButton" />
+							<Button id="orange" text="" width="800" height="50" backgroundColor="orange" tap="onTapButton" />
+							<Button id="aqua" text="" width="800" height="50" backgroundColor="aqua" tap="onTapButton" />
+							<Button id="black" text="" width="800" height="50" backgroundColor="black" tap="onTapButton" />
+							<Button id="brown" text="" width="800" height="50" backgroundColor="brown" tap="onTapButton" />
+						</StackLayout>
+					</ScrollView>
+				</TabViewItem.view>
+			</TabViewItem>
+
+			<TabViewItem title="GRID">
+				<TabViewItem.view>
+					<StackLayout orientation="vertical" backgroundColor="white">
+						<Label text="Grid" />
+						<GridLayout columns="*,*" rows="*,*,*,*,*,">
+							<Button col="0" row="0" rowSpan="2" margin="10px" borderRadius="4px" id="red" text="" backgroundColor="red" tap="onTapButton"
+							/>
+							<Button col="1" row="0" rowSpan="4" margin="10px" borderRadius="4px" id="green" text="" backgroundColor="green" tap="onTapButton"
+							/>
+							<Button col="0" row="2" margin="10px" borderRadius="4px" id="blue" text="" backgroundColor="blue" tap="onTapButton" />
+							<Button col="0" row="3" margin="10px" borderRadius="4px" id="SpringGreen" text="" backgroundColor="SpringGreen" tap="onTapButton"
+							/>
+							<Button col="0" row="4" colSpan="2" margin="10px" borderRadius="4px" id="purple" text="" backgroundColor="purple" tap="onTapButton"
+							/>
+						</GridLayout>
+					</StackLayout>
+				</TabViewItem.view>
+			</TabViewItem>
+
+			<TabViewItem title="DOCK">
+				<TabViewItem.view>
+					<GridLayout rows="auto,*">
+						<Label row="0" text="Dock" />
+						<DockLayout row="1" stretchLastChild="true" width="800" height="300">
+							<Button id="red" dock="left" width="90" backgroundColor="red" margin="10px" borderRadius="4px" tap="onTapButton" />
+							<Button id="black" dock="top" height="90" backgroundColor="black" margin="10px" borderRadius="4px" tap="onTapButton" />
+							<Button id="orange" dock="bottom" height="90" backgroundColor="orange" margin="10px" borderRadius="4px" tap="onTapButton"
+							/>
+							<Button id="green" dock="right" width="90" backgroundColor="green" margin="10px" borderRadius="4px" tap="onTapButton" />
+							<Button id="silver" dock="bottom" height="90" backgroundColor="silver" margin="10px" borderRadius="4px" tap="onTapButton"
+							/>
+						</DockLayout>
+					</GridLayout>
+				</TabViewItem.view>
+			</TabViewItem>
+
+<TabViewItem title="WRAP">
+	<TabViewItem.view>
+		<StackLayout>
+			<Label text="Wrap" />
+			<WrapLayout>
+				<Button id="dark red" width="150" height="100" backgroundColor="DarkRed" margin="10px" borderRadius="4px" tap="onTapButton"/>
+				<Button id="dark cyan" width="150" height="100" backgroundColor="DarkCyan" margin="10px" borderRadius="4px" tap="onTapButton"/>
+				<Button id="dark orchid" width="200" height="100" backgroundColor="DarkOrchid" margin="10px" borderRadius="4px" tap="onTapButton"/>
+				<Button id="golden rod" width="100" height="100" backgroundColor="GoldenRod" margin="10px" borderRadius="4px" tap="onTapButton"/>
+				<Button id="honey dew" width="150" height="100" backgroundColor="HoneyDew" margin="10px" borderRadius="4px" tap="onTapHoneyDew"/>
+			</WrapLayout>
+		</StackLayout>
+	</TabViewItem.view>
+</TabViewItem>
+
+<TabViewItem title="ABSOLUTE">
+	<TabViewItem.view>
+		<StackLayout>
+			<Label text="Absolute" />
+			<AbsoluteLayout>
+				<Button id="lawn green" left="10" top="10" width="100" height="100" backgroundColor="LawnGreen" borderRadius="4px" tap="onTapButton"/>
+				<Button id="light sea green" left="175" top="50" margin="30" width="100" height="200" backgroundColor="LightSeaGreen" borderRadius="4px" tap="onTapButton"/>
+				<Button id="medium violet red" left="30" top="200" margin="30" width="200" height="100" backgroundColor="MediumVioletRed" borderRadius="4px" tap="onTapButton"/>
+			</AbsoluteLayout>
+		</StackLayout>
+	</TabViewItem.view>
+</TabViewItem>
+
+</TabView.items>
+</TabView>
+</Page>
